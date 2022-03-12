@@ -73,10 +73,12 @@ static char	*get_line(int fd, char **buffer, char **backup)
 
 char	*get_next_line(int fd)
 {
-	static char	*backup[256 + 1];
+	static char	*backup[257];
 	char		*buffer;
 	char		*result;
 
+	if (fd < 0 || fd > 256 || BUFFER_SIZE <= 0)
+		return (NULL);
 	buffer = (char *)malloc(sizeof(char) * BUFFER_SIZE + 1);
 	if (!buffer)
 		return (NULL);
