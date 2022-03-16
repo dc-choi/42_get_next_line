@@ -6,7 +6,7 @@
 /*   By: donchoi <donchoi.student.42seoul.kr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/07 15:14:34 by donchoi           #+#    #+#             */
-/*   Updated: 2022/03/07 17:01:05 by donchoi          ###   ########.fr       */
+/*   Updated: 2022/03/16 14:34:34 by donchoi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ static char	*get_line(int fd, char **buffer, char **backup)
 
 char	*get_next_line(int fd)
 {
-	static char	*backup[257];
+	static char	*backup[256];
 	char		*buffer;
 	char		*result;
 
