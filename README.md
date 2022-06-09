@@ -1,3 +1,3 @@
-# 42_get_next_line
+# 42_GNL
 
 https://dc-choi.tistory.com/52
